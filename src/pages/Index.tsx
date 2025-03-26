@@ -6,7 +6,6 @@ import Appointment from "@/components/Appointment";
 import Map from "@/components/Map";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { MessageSquare, Truck, Package } from "lucide-react";
 
 const Index = () => {
   return (
@@ -14,7 +13,11 @@ const Index = () => {
       <main className="min-h-screen antialiased">
         <Navbar />
         <Hero />
+        <Reviews />
+        <Appointment />
+        <Map />
         
+        {/* About Section - Moved below Location */}
         <section id="about" className="section-container">
           <div className="text-center mb-16">
             <span className="inline-block px-3 py-1 bg-mauve-100 dark:bg-mauve-900/30 text-mauve-700 dark:text-mauve-300 rounded-full text-sm font-medium mb-4">
@@ -103,9 +106,6 @@ const Index = () => {
           </div>
         </section>
         
-        <Reviews />
-        <Appointment />
-        <Map />
         <Footer />
       </main>
     </ThemeProvider>
