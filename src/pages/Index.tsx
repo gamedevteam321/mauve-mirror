@@ -1,13 +1,66 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Reviews from "@/components/Reviews";
+import Appointment from "@/components/Appointment";
+import Map from "@/components/Map";
+import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <ThemeProvider defaultTheme="light">
+      <main className="min-h-screen antialiased">
+        <Navbar />
+        <Hero />
+        
+        <section id="about" className="section-container">
+          <div className="text-center mb-16">
+            <span className="inline-block px-3 py-1 bg-mauve-100 dark:bg-mauve-900/30 text-mauve-700 dark:text-mauve-300 rounded-full text-sm font-medium mb-4">
+              Our Story
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
+              About Mauve Story
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Creating personalized fashion experiences since 2015.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="h-[400px] bg-mauve-200 dark:bg-mauve-800 rounded-xl overflow-hidden">
+              <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')] bg-cover bg-center"></div>
+            </div>
+            
+            <div className="space-y-6">
+              <p className="text-lg">
+                Mauve Story began with a simple vision: to create a fashion boutique that celebrates individuality and offers personalized styling experiences.
+              </p>
+              
+              <p>
+                Founded in 2015, we've been dedicated to helping our clients discover their unique style through curated collections and expert fashion advice. Our team of passionate stylists works closely with each client to understand their preferences and lifestyle needs.
+              </p>
+              
+              <p>
+                We believe that fashion is more than just clothing—it's a form of self-expression that empowers and inspires. At Mauve Story, we're committed to making fashion accessible, enjoyable, and personal for everyone who walks through our doors.
+              </p>
+              
+              <a 
+                href="#appointment" 
+                className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              >
+                Book an Appointment
+              </a>
+            </div>
+          </div>
+        </section>
+        
+        <Reviews />
+        <Appointment />
+        <Map />
+        <Footer />
+      </main>
+    </ThemeProvider>
   );
 };
 
