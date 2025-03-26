@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 import MauveLogo from "./MauveLogo";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -57,6 +58,10 @@ const Navbar = () => {
           >
             Book Now
           </a>
+          
+          <div className="md:hidden">
+            <MobileMenu />
+          </div>
         </div>
       </div>
     </header>
