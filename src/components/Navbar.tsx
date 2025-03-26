@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
+import MauveLogo from "./MauveLogo";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -25,9 +26,7 @@ const Navbar = () => {
       <div className="container max-w-7xl mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <span className="font-serif text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mauve-700 to-mauve-500">
-              Mauve Story
-            </span>
+            <MauveLogo />
           </a>
         </div>
         

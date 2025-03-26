@@ -6,6 +6,7 @@ import Appointment from "@/components/Appointment";
 import Map from "@/components/Map";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { MessageSquare, Truck, Package } from "lucide-react";
 
 const Index = () => {
   return (
@@ -51,6 +52,53 @@ const Index = () => {
               >
                 Book an Appointment
               </a>
+            </div>
+          </div>
+          
+          {/* Service Features */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+            <div className="text-center p-6 rounded-xl bg-mauve-50 dark:bg-mauve-900/20 transition-all duration-300 hover:shadow-lg">
+              <div className="mx-auto mb-4 w-24 h-24">
+                <img 
+                  src="/lovable-uploads/c84b9a64-22e0-4faa-afb0-16311442cc08.png" 
+                  alt="Customer Service" 
+                  className="w-full h-full object-contain" 
+                />
+              </div>
+              <h3 className="font-serif text-xl font-bold mb-2">Customer Service</h3>
+              <p className="text-muted-foreground">
+                Live chat support available to assist you with any questions about our products or services.
+              </p>
+            </div>
+            
+            <div className="text-center p-6 rounded-xl bg-mauve-50 dark:bg-mauve-900/20 transition-all duration-300 hover:shadow-lg">
+              <div className="mx-auto mb-4 w-24 h-24 flex justify-center items-center">
+                <img 
+                  src="/lovable-uploads/c84b9a64-22e0-4faa-afb0-16311442cc08.png" 
+                  alt="Worldwide Shipping" 
+                  className="w-full h-full object-contain"
+                  style={{ objectPosition: "0 -200px" }} 
+                />
+              </div>
+              <h3 className="font-serif text-xl font-bold mb-2">World Wide Shipping</h3>
+              <p className="text-muted-foreground">
+                We deliver our exclusive fashion collections to customers globally, ensuring everyone can access our unique styles.
+              </p>
+            </div>
+            
+            <div className="text-center p-6 rounded-xl bg-mauve-50 dark:bg-mauve-900/20 transition-all duration-300 hover:shadow-lg">
+              <div className="mx-auto mb-4 w-24 h-24 flex justify-center items-center">
+                <img 
+                  src="/lovable-uploads/c84b9a64-22e0-4faa-afb0-16311442cc08.png" 
+                  alt="Easy Returns" 
+                  className="w-full h-full object-contain"
+                  style={{ objectPosition: "0 -400px" }} 
+                />
+              </div>
+              <h3 className="font-serif text-xl font-bold mb-2">Easy Returns</h3>
+              <p className="text-muted-foreground">
+                Hassle-free return policy allows you to shop with confidence, knowing we stand behind the quality of our products.
+              </p>
             </div>
           </div>
         </section>
