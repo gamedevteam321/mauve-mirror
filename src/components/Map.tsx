@@ -24,21 +24,21 @@ const Map = () => {
           Our Physical Location
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Experience Mauve Story in person at our boutique in Pitam Pura.
+          Experience Mauve Story in person at our boutique
         </p>
       </div>
       
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
           <div className="glass p-6 rounded-xl">
-            <h3 className="font-serif text-xl font-semibold mb-2">Mauve Story Pitam Pura</h3>
+            <h3 className="font-serif text-xl font-semibold mb-2">Mauve Story Pitampura</h3>
             <p className="text-muted-foreground mb-4">
               Visit our flagship store for personalized styling and exclusive collections.
             </p>
             <div className="space-y-2">
               <div className="flex items-start">
                 <span className="font-medium mr-2">Address:</span>
-                <span>Pitam Pura, Delhi, India</span>
+                <span>Pitampura, Delhi, India</span>
               </div>
               <div className="flex items-start">
                 <span className="font-medium mr-2">Hours:</span>
@@ -46,7 +46,7 @@ const Map = () => {
               </div>
               <div className="flex items-start">
                 <span className="font-medium mr-2">Phone:</span>
-                <span>+91 XXXXX XXXXX</span>
+                <span>+91 98109 47849</span>
               </div>
             </div>
           </div>

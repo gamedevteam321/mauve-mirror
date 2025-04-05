@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 
 const Appointment = () => {
@@ -21,14 +20,14 @@ const Appointment = () => {
           Book Your Visit
         </span>
         <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-          Schedule a Virtual Appointment
+         Special Appointments
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Choose a convenient time for your personalized consultation with our style experts.
+        Visit our store for personalise walkthrough & consultation with our style experts
         </p>
       </div>
       
-      <div className="relative w-full overflow-hidden rounded-xl shadow-xl bg-white dark:bg-card">
+      <div className="relative w-full overflow-hidden rounded-xl shadow-xl bg-white dark:bg-white">
         <iframe
           ref={iframeRef}
           src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1PEnwmaKbzsoIj4tvDvaNGXQWBRJWAhmk7C14vRNz2K-ZRE4WuxKiXtegA8ArCvMvIVsCmY4Yq?gv=true"

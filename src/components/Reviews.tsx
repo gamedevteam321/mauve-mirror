@@ -24,7 +24,7 @@ const Reviews = () => {
           What Our Clients Say
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Discover why our clients love Mauve Story and how we've helped them find their perfect style.
+          Discover how we've helped our clients to find their perfect style.
         </p>
       </div>
       

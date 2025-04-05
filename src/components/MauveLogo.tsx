@@ -1,13 +1,12 @@
-
 import React from 'react';
 
 const MauveLogo = ({ className = "" }: { className?: string }) => {
   return (
     <div className={`flex items-center ${className}`}>
       <img 
-        src="/lovable-uploads/7957072c-d172-49fb-84cc-bbea76ab2f17.png" 
-        alt="Mauve Story Logo" 
-        className="h-12" 
+        src="/images/logo.png" 
+        alt="Mauve Logo" 
+        className="h-14 w-auto"
       />
     </div>
   );

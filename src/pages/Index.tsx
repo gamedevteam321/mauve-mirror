@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Reviews from "@/components/Reviews";
@@ -63,7 +62,7 @@ const Index = () => {
             <div className="text-center p-6 rounded-xl bg-mauve-50 dark:bg-mauve-900/20 transition-all duration-300 hover:shadow-lg">
               <div className="mx-auto mb-4 w-24 h-24">
                 <img 
-                  src="/lovable-uploads/c84b9a64-22e0-4faa-afb0-16311442cc08.png" 
+                  src="/images/customer-service.png" 
                   alt="Customer Service" 
                   className="w-full h-full object-contain" 
                 />
@@ -77,10 +76,9 @@ const Index = () => {
             <div className="text-center p-6 rounded-xl bg-mauve-50 dark:bg-mauve-900/20 transition-all duration-300 hover:shadow-lg">
               <div className="mx-auto mb-4 w-24 h-24 flex justify-center items-center">
                 <img 
-                  src="/lovable-uploads/c84b9a64-22e0-4faa-afb0-16311442cc08.png" 
+                  src="/images/shipping.png" 
                   alt="Worldwide Shipping" 
                   className="w-full h-full object-contain"
-                  style={{ objectPosition: "0 -200px" }} 
                 />
               </div>
               <h3 className="font-serif text-xl font-bold mb-2">World Wide Shipping</h3>
@@ -92,10 +90,9 @@ const Index = () => {
             <div className="text-center p-6 rounded-xl bg-mauve-50 dark:bg-mauve-900/20 transition-all duration-300 hover:shadow-lg">
               <div className="mx-auto mb-4 w-24 h-24 flex justify-center items-center">
                 <img 
-                  src="/lovable-uploads/c84b9a64-22e0-4faa-afb0-16311442cc08.png" 
+                  src="/images/returns.png" 
                   alt="Easy Returns" 
                   className="w-full h-full object-contain"
-                  style={{ objectPosition: "0 -400px" }} 
                 />
               </div>
               <h3 className="font-serif text-xl font-bold mb-2">Easy Returns</h3>
