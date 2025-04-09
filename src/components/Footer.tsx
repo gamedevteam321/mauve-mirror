@@ -27,10 +27,10 @@ const Footer = () => {
             <h3 className="font-medium text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="#/" className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
-              <li><a href="#location" className="text-muted-foreground hover:text-primary transition-colors">Our Store</a></li>
-              <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#reviews" className="text-muted-foreground hover:text-primary transition-colors">Reviews</a></li>
-              <li><a href="#appointment" className="text-muted-foreground hover:text-primary transition-colors">Book Appointment</a></li>
+              <li><a href="#/location" className="text-muted-foreground hover:text-primary transition-colors">Our Store</a></li>
+              <li><a href="#/about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+              <li><a href="#/reviews" className="text-muted-foreground hover:text-primary transition-colors">Reviews</a></li>
+              <li><a href="#/appointment" className="text-muted-foreground hover:text-primary transition-colors">Book Appointment</a></li>
             </ul>
           </div>
           
@@ -53,9 +53,9 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Mauve Story. All rights reserved.</p>
             </div>
             <div className="text-center md:text-right text-sm text-muted-foreground">
-              <a href="#privacy" className="hover:text-primary transition-colors mr-4">Privacy Policy</a>
-              <a href="#terms" className="hover:text-primary transition-colors mr-4">Terms of Service</a>
-              <a href="#shipping" className="hover:text-primary transition-colors">Shipping Policy</a>
+              <a href="#/privacy" className="hover:text-primary transition-colors mr-4">Privacy Policy</a>
+              <a href="#/terms" className="hover:text-primary transition-colors mr-4">Terms of Service</a>
+              <a href="#/shipping" className="hover:text-primary transition-colors">Shipping Policy</a>
             </div>
           </div>
         </div>
