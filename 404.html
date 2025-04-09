@@ -7,26 +7,14 @@
       // Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
-      var pathSegmentsToKeep = 2;
-
       var l = window.location;
       var path = l.pathname.split('/').slice(2).join('/');
       
-      // Handle hash routes
-      if (path === 'reviews' || path === 'location' || path === 'about' || path === 'appointment') {
-        l.replace(
-          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-          '/mauve-mirror/#/' + path
-        );
-      } else {
-        l.replace(
-          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-          '/mauve-mirror/' +
-          path.replace(/&/g, '~and~') +
-          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-          l.hash
-        );
-      }
+      // Always redirect to hash route
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        '/mauve-mirror/#' + path
+      );
     </script>
   </head>
   <body>
