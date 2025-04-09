@@ -55,7 +55,7 @@ const MobileMenu = ({ categories }: MobileMenuProps) => {
               {categories.map((category) => (
                 <DropdownMenuItem key={category.slug} asChild>
                   <a 
-                    href={`#/collection/${category.slug}`}
+                    href={`#collection/${category.slug}`}
                     className="text-sm py-1 px-2"
                   >
                     {category.title}

@@ -27,21 +27,21 @@ const Footer = () => {
             <h3 className="font-medium text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="#/" className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
-              <li><a href="#/location" className="text-muted-foreground hover:text-primary transition-colors">Our Store</a></li>
-              <li><a href="#/about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#/reviews" className="text-muted-foreground hover:text-primary transition-colors">Reviews</a></li>
-              <li><a href="#/appointment" className="text-muted-foreground hover:text-primary transition-colors">Book Appointment</a></li>
+              <li><a href="#location" className="text-muted-foreground hover:text-primary transition-colors">Our Store</a></li>
+              <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+              <li><a href="#reviews" className="text-muted-foreground hover:text-primary transition-colors">Reviews</a></li>
+              <li><a href="#appointment" className="text-muted-foreground hover:text-primary transition-colors">Book Appointment</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-medium text-lg mb-4">Collections</h3>
             <ul className="space-y-2">
-              <li><a href="#/collection/lehenga" className="text-muted-foreground hover:text-primary transition-colors">Lehnga</a></li>
-              <li><a href="#/collection/gown" className="text-muted-foreground hover:text-primary transition-colors">Gown</a></li>
-              <li><a href="#/collection/indo-western" className="text-muted-foreground hover:text-primary transition-colors">Indo Western</a></li>
-              <li><a href="#/collection/bridal-lehenga" className="text-muted-foreground hover:text-primary transition-colors">Bridal Lehenga</a></li>
-              <li><a href="#/collection" className="text-muted-foreground hover:text-primary transition-colors">All Collection</a></li>
+              <li><a href="#collection/lehenga" className="text-muted-foreground hover:text-primary transition-colors">Lehnga</a></li>
+              <li><a href="#collection/gown" className="text-muted-foreground hover:text-primary transition-colors">Gown</a></li>
+              <li><a href="#collection/indo-western" className="text-muted-foreground hover:text-primary transition-colors">Indo Western</a></li>
+              <li><a href="#collection/bridal-lehenga" className="text-muted-foreground hover:text-primary transition-colors">Bridal Lehenga</a></li>
+              <li><a href="#collection" className="text-muted-foreground hover:text-primary transition-colors">All Collection</a></li>
             </ul>
           </div>
         </div>
