@@ -21,7 +21,7 @@ const categories: Category[] = [
   { title: 'BANARSI LEHNGА', slug: 'banarsi-lehenga', imageUrl: '/images/catagories/banarsi-lehenga.png' },
 ];
 
-const defaultImage = '/images/logo.png';
+const defaultImage = './images/logo.png';
 
 const CollectionCategories = () => {
   const [isDragging, setIsDragging] = useState(false);
