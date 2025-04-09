@@ -8,7 +8,7 @@ export default defineConfig({
     host: "::",
     port: 8080,
   },
-  base: './',
+  base: '/mauve-mirror/',
   plugins: [react()],
   resolve: {
     alias: {
