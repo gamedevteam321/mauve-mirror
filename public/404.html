@@ -8,9 +8,9 @@
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
       var l = window.location;
-      var path = l.pathname.split('/').slice(2).join('/');
+      var path = l.pathname.split('/').slice(1).join('/');
       
-      // Always redirect to hash route
+      // Always redirect to hash route with correct base URL
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         '/mauve-mirror/#' + path
