@@ -8,7 +8,7 @@ export default defineConfig({
     host: "::",
     port: 8080,
   },
-  base: process.env.NODE_ENV === 'production' ? '/mauve-mirror/' : '/',
+  base: '/mauve-mirror/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -16,6 +16,8 @@ export default defineConfig({
     },
   },
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
       output: {
         manualChunks: undefined,
