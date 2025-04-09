@@ -8,17 +8,17 @@ interface Category {
 }
 
 const categories: Category[] = [
-  { title: 'DRAPE SAREE', slug: 'drape-saree', imageUrl: '/images/catagories/drape-saree.png' },
-  { title: 'INDO WESTREN', slug: 'indo-western', imageUrl: '/images/catagories/indo-western.png' },
-  { title: 'SHARARA', slug: 'sharara', imageUrl: '/images/catagories/sharara.png' },
-  { title: 'LEHNGА', slug: 'lehenga', imageUrl: '/images/catagories/lehenga.png' },
-  { title: 'GOWN', slug: 'gown', imageUrl: '/images/catagories/gown.png' },
-  { title: 'BRIDEMAID', slug: 'bridemaid', imageUrl: '/images/catagories/bridemaid.png' },
-  { title: 'FISHCUT', slug: 'fishcut', imageUrl: '/images/catagories/fishcut.png' },
-  { title: 'BRIDAL LEHNGА', slug: 'bridal-lehenga', imageUrl: '/images/catagories/bridal-lehenga.png' },
-  { title: 'CO-CORDS', slug: 'co-cords', imageUrl: '/images/catagories/co-cords.png' },
-  { title: 'ANARKALI', slug: 'anarkali', imageUrl: '/images/catagories/anarkali.png' },
-  { title: 'BANARSI LEHNGА', slug: 'banarsi-lehenga', imageUrl: '/images/catagories/banarsi-lehenga.png' },
+  { title: 'DRAPE SAREE', slug: 'drape-saree', imageUrl: './images/catagories/drape-saree.png' },
+  { title: 'INDO WESTREN', slug: 'indo-western', imageUrl: './images/catagories/indo-western.png' },
+  { title: 'SHARARA', slug: 'sharara', imageUrl: './images/catagories/sharara.png' },
+  { title: 'LEHNGА', slug: 'lehenga', imageUrl: './images/catagories/lehenga.png' },
+  { title: 'GOWN', slug: 'gown', imageUrl: './images/catagories/gown.png' },
+  { title: 'BRIDEMAID', slug: 'bridemaid', imageUrl: './images/catagories/bridemaid.png' },
+  { title: 'FISHCUT', slug: 'fishcut', imageUrl: './images/catagories/fishcut.png' },
+  { title: 'BRIDAL LEHNGА', slug: 'bridal-lehenga', imageUrl: './images/catagories/bridal-lehenga.png' },
+  { title: 'CO-CORDS', slug: 'co-cords', imageUrl: './images/catagories/co-cords.png' },
+  { title: 'ANARKALI', slug: 'anarkali', imageUrl: './images/catagories/anarkali.png' },
+  { title: 'BANARSI LEHNGА', slug: 'banarsi-lehenga', imageUrl: './images/catagories/banarsi-lehenga.png' },
 ];
 
 const defaultImage = './images/logo.png';
