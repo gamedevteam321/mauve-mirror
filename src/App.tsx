@@ -26,10 +26,10 @@ const App = () => (
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/shipping" element={<ShippingPolicy />} />
-          <Route path="/reviews" element={<Navigate to="/#reviews" replace />} />
-          <Route path="/location" element={<Navigate to="/#location" replace />} />
-          <Route path="/about" element={<Navigate to="/#about" replace />} />
-          <Route path="/appointment" element={<Navigate to="/#appointment" replace />} />
+          <Route path="/reviews" element={<Navigate to="#/reviews" replace />} />
+          <Route path="/location" element={<Navigate to="#/location" replace />} />
+          <Route path="/about" element={<Navigate to="#/about" replace />} />
+          <Route path="/appointment" element={<Navigate to="#/appointment" replace />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

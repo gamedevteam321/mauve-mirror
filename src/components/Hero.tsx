@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <div className="text-center mt-12">
           <a 
-            href="/collection"
+            href="#/collection"
             className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-medium text-primary-foreground shadow hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
           >
             View All Collection

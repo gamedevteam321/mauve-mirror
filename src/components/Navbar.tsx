@@ -66,9 +66,9 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          <a href="#reviews" className="nav-link text-sm font-medium">Reviews</a>
-          <a href="#location" className="nav-link text-sm font-medium">Location</a>
-          <a href="#about" className="nav-link text-sm font-medium">About Us</a>
+          <a href="#/reviews" className="nav-link text-sm font-medium">Reviews</a>
+          <a href="#/location" className="nav-link text-sm font-medium">Location</a>
+          <a href="#/about" className="nav-link text-sm font-medium">About Us</a>
         </nav>
         
         <div className="flex items-center space-x-4">

@@ -66,17 +66,17 @@ const MobileMenu = ({ categories }: MobileMenuProps) => {
           </div>
 
           <DropdownMenuItem asChild>
-            <a href="#reviews" className="text-base py-2 px-3">Reviews</a>
+            <a href="#/reviews" className="text-base py-2 px-3">Reviews</a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <a href="#location" className="text-base py-2 px-3">Location</a>
+            <a href="#/location" className="text-base py-2 px-3">Location</a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <a href="#about" className="text-base py-2 px-3">About Us</a>
+            <a href="#/about" className="text-base py-2 px-3">About Us</a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
             <a 
-              href="#appointment" 
+              href="#/appointment" 
               className="mt-2 inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow"
             >
               Book Appointment

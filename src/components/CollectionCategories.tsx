@@ -99,7 +99,7 @@ const CollectionCategories = () => {
       {categories.map((category) => (
         <Link
           key={category.slug}
-          to={`/collection/${category.slug}`}
+          to={`#/collection/${category.slug}`}
           className="flex-shrink-0 relative w-[150px] h-[250px] rounded-lg overflow-hidden group bg-mauve-100/10"
           onClick={(e) => isDragging && e.preventDefault()}
         >
