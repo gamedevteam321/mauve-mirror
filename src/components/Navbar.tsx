@@ -40,13 +40,13 @@ const Navbar = () => {
     }`}>
       <div className="container max-w-7xl mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <a href="/" className="flex items-center">
+          <a href="#/" className="flex items-center">
             <MauveLogo />
           </a>
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="/" className="nav-link text-sm font-medium">Home</a>
+          <a href="#/" className="nav-link text-sm font-medium">Home</a>
           <div className="relative group">
             <button 
               className="nav-link text-sm font-medium flex items-center gap-1"
@@ -58,7 +58,7 @@ const Navbar = () => {
               {categories.map((category) => (
                 <a
                   key={category.slug}
-                  href={`/collection/${category.slug}`}
+                  href={`#/collection/${category.slug}`}
                   className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
                   {category.title}
@@ -66,9 +66,9 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          <a href="/#reviews" className="nav-link text-sm font-medium">Reviews</a>
-          <a href="/#location" className="nav-link text-sm font-medium">Location</a>
-          <a href="/#about" className="nav-link text-sm font-medium">About Us</a>
+          <a href="#reviews" className="nav-link text-sm font-medium">Reviews</a>
+          <a href="#location" className="nav-link text-sm font-medium">Location</a>
+          <a href="#about" className="nav-link text-sm font-medium">About Us</a>
         </nav>
         
         <div className="flex items-center space-x-4">
@@ -85,7 +85,7 @@ const Navbar = () => {
           </button>
           
           <a 
-            href="/#appointment" 
+            href="#appointment" 
             className="hidden md:inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
           >
             Book Appointment

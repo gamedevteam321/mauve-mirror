@@ -45,7 +45,7 @@ const MobileMenu = ({ categories }: MobileMenuProps) => {
       >
         <div className="grid gap-3">
           <DropdownMenuItem asChild>
-            <a href="/" className="text-base py-2 px-3">Home</a>
+            <a href="#/" className="text-base py-2 px-3">Home</a>
           </DropdownMenuItem>
           
           {/* Collection Categories */}
@@ -55,7 +55,7 @@ const MobileMenu = ({ categories }: MobileMenuProps) => {
               {categories.map((category) => (
                 <DropdownMenuItem key={category.slug} asChild>
                   <a 
-                    href={`/collection/${category.slug}`}
+                    href={`#/collection/${category.slug}`}
                     className="text-sm py-1 px-2"
                   >
                     {category.title}
@@ -66,13 +66,13 @@ const MobileMenu = ({ categories }: MobileMenuProps) => {
           </div>
 
           <DropdownMenuItem asChild>
-            <a href="/#reviews" className="text-base py-2 px-3">Reviews</a>
+            <a href="#reviews" className="text-base py-2 px-3">Reviews</a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <a href="/#location" className="text-base py-2 px-3">Location</a>
+            <a href="#location" className="text-base py-2 px-3">Location</a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <a href="/#about" className="text-base py-2 px-3">About Us</a>
+            <a href="#about" className="text-base py-2 px-3">About Us</a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
             <a 
