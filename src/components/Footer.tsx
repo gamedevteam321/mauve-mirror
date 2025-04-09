@@ -7,9 +7,19 @@ const Footer = () => {
       <div className="container max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 pl-20 pr-20">
           <div className="md:col-span-1">
-            <a href="#/" className="inline-block mb-4">
-              <MauveLogo className="mb-2" />
-            </a>
+            <button 
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+                });
+              }}
+              className="inline-block mb-4"
+            >
+              <div className="flex items-center mb-2">
+                <img src="./images/logo.png" alt="Mauve Logo" className="h-14 w-auto" />
+              </div>
+            </button>
             <p className="text-muted-foreground mb-4">
               Premium fashion boutique offering personalized styling experiences and curated collections.
             </p>
@@ -26,11 +36,99 @@ const Footer = () => {
           <div>
             <h3 className="font-medium text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#/" className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
-              <li><a href="#location" className="text-muted-foreground hover:text-primary transition-colors">Our Store</a></li>
-              <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#reviews" className="text-muted-foreground hover:text-primary transition-colors">Reviews</a></li>
-              <li><a href="#appointment" className="text-muted-foreground hover:text-primary transition-colors">Book Appointment</a></li>
+              <li>
+                <button 
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: 'smooth'
+                    });
+                  }}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('location');
+                    if (element) {
+                      const navbar = document.querySelector('nav');
+                      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
+                      const elementPosition = element.getBoundingClientRect().top;
+                      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Our Store
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('about');
+                    if (element) {
+                      const navbar = document.querySelector('nav');
+                      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
+                      const elementPosition = element.getBoundingClientRect().top;
+                      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  About Us
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('reviews');
+                    if (element) {
+                      const navbar = document.querySelector('nav');
+                      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
+                      const elementPosition = element.getBoundingClientRect().top;
+                      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Reviews
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('appointment');
+                    if (element) {
+                      const navbar = document.querySelector('nav');
+                      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
+                      const elementPosition = element.getBoundingClientRect().top;
+                      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Book Appointment
+                </button>
+              </li>
             </ul>
           </div>
           

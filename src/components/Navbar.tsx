@@ -40,13 +40,31 @@ const Navbar = () => {
     }`}>
       <div className="container max-w-7xl mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <a href="#/" className="flex items-center">
+          <button 
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+            }}
+            className="flex items-center"
+          >
             <MauveLogo />
-          </a>
+          </button>
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#/" className="nav-link text-sm font-medium">Home</a>
+          <button 
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+            }}
+            className="nav-link text-sm font-medium"
+          >
+            Home
+          </button>
           <div className="relative group">
             <button 
               className="nav-link text-sm font-medium flex items-center gap-1"
@@ -66,10 +84,60 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          <a href="#reviews" className="nav-link text-sm font-medium">Reviews</a>
-          <a href="#location" className="nav-link text-sm font-medium">Location</a>
-          <a href="#about" className="nav-link text-sm font-medium">About Us</a>
-          <a href="#appointment" className="nav-link text-sm font-medium">Book Appointment</a>
+          <button 
+            onClick={() => {
+              const element = document.getElementById('reviews');
+              if (element) {
+                const navbar = document.querySelector('nav');
+                const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+            className="nav-link text-sm font-medium"
+          >
+            Reviews
+          </button>
+          <button 
+            onClick={() => {
+              const element = document.getElementById('location');
+              if (element) {
+                const navbar = document.querySelector('nav');
+                const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+            className="nav-link text-sm font-medium"
+          >
+            Location
+          </button>
+          <button 
+            onClick={() => {
+              const element = document.getElementById('about');
+              if (element) {
+                const navbar = document.querySelector('nav');
+                const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+            className="nav-link text-sm font-medium"
+          >
+            About Us
+          </button>
         </nav>
         
         <div className="flex items-center space-x-4">
@@ -85,12 +153,24 @@ const Navbar = () => {
             )}
           </button>
           
-          <a 
-            href="#appointment" 
+          <button 
+            onClick={() => {
+              const element = document.getElementById('appointment');
+              if (element) {
+                const navbar = document.querySelector('nav');
+                const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
             className="hidden md:inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
           >
             Book Appointment
-          </a>
+          </button>
           
           <div className="md:hidden">
             <MobileMenu categories={categories} />
