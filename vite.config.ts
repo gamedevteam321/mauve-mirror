@@ -25,6 +25,7 @@ export default defineConfig({
   preview: {
     headers: {
       'Permissions-Policy': 'interest-cohort=()',
+      'Content-Security-Policy': "default-src 'self'; font-src 'self' https://fonts.gstatic.com https://gamedevteam321.github.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:; connect-src 'self' https:;"
     },
   },
 });
