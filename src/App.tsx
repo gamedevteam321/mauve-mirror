@@ -22,7 +22,7 @@ const App = () => (
       <HashRouter>
         <SectionNavigator />
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/mauve-mirror/" element={<Index />} />
           <Route path="/collection" element={<Collection />} />
           <Route path="/collection/:slug" element={<CategoryPage />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
