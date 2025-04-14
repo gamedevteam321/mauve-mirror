@@ -32,7 +32,7 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="h-[400px] bg-mauve-200 dark:bg-mauve-800 rounded-xl overflow-hidden">
-              <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')] bg-cover bg-center"></div>
+              <div className="w-full h-full bg-[url('/images/mauveabt.png')] bg-cover bg-center"></div>
             </div>
             
             <div className="space-y-6">
