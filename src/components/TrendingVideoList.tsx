@@ -2,17 +2,17 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 interface Video {
-  videoUrl: string;
-  extraText?: string;
+    videoUrl: string;
+    extraText?: string;
 }
 
 // Helper function to extract YouTube video IDs
 function getVideoId(videoUrl: string): string | null {
-  if (videoUrl.includes("shorts/")) {
+    if (videoUrl.includes("shorts/")) {
     return videoUrl.split("shorts/")[1].split("?")[0];
-  } else if (videoUrl.includes("watch?v=")) {
+    } else if (videoUrl.includes("watch?v=")) {
     return videoUrl.split("watch?v=")[1].split("&")[0];
-  } else if (videoUrl.includes("youtu.be/")) {
+    } else if (videoUrl.includes("youtu.be/")) {
     return videoUrl.split("youtu.be/")[1].split("?")[0];
   }
   return null;
@@ -31,44 +31,44 @@ const VideoCard = ({ video, paused, isActive, onPrev, onNext }: VideoCardProps) 
   const videoId = getVideoId(video.videoUrl);
   const extraText = video.extraText || "";
   const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=${
-    paused ? 0 : 1
+    const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=${
+        paused ? 0 : 1
   }&mute=1&loop=1&playlist=${videoId}&controls=0&modestbranding=1&showinfo=0&rel=0&disablekb=1&fs=0&iv_load_policy=3`;
 
   const handleLoad = () => setLoaded(true);
 
-  // Prepare WhatsApp URL
+    // Prepare WhatsApp URL
   const message = `I want to Inquire about \n${video.videoUrl}`;
   const whatsappUrl = `https://wa.me/9810947849?text=${encodeURIComponent(message)}`;
 
-  return (
+    return (
     <div className="w-full h-full relative bg-black overflow-hidden rounded-xl shadow-lg">
-      {paused ? (
-        <img
-          src={thumbnailUrl}
-          alt="Thumbnail"
+            {paused ? (
+                <img
+                    src={thumbnailUrl}
+                    alt="Thumbnail"
           className="w-full h-full object-cover"
-        />
-      ) : (
-        <>
-          {!loaded && (
+                />
+            ) : (
+                <>
+                    {!loaded && (
             <div className="absolute inset-0 flex items-center justify-center bg-black z-10">
               <span className="text-white font-poppins">
-                Loading...
-              </span>
-            </div>
-          )}
-          <iframe
-            src={embedUrl}
-            title="Video"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen={false}
-            onLoad={handleLoad}
+                                Loading...
+                            </span>
+                        </div>
+                    )}
+                    <iframe
+                        src={embedUrl}
+                        title="Video"
+                        frameBorder="0"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen={false}
+                        onLoad={handleLoad}
             className="w-full h-full object-cover pointer-events-none"
-          />
-        </>
-      )}
+                    />
+                </>
+            )}
       
       {/* Mobile Navigation Buttons */}
       <div className="md:hidden absolute bottom-20 left-2.5 right-2.5 flex justify-between items-center gap-4 z-10">
@@ -96,22 +96,22 @@ const VideoCard = ({ video, paused, isActive, onPrev, onNext }: VideoCardProps) 
 
       {/* Buy Now Button */}
       <div className="absolute bottom-4 left-2.5 right-2.5 bg-gradient-to-r from-[#BC7BD0] via-[#AD55C8] to-[#82309C] rounded-lg p-2.5 shadow-lg font-poppins text-left z-10 pointer-events-auto">
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+                <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
           className="flex justify-between items-center text-white text-lg font-bold w-full cursor-pointer"
-          onTouchStart={(e) => {
+                    onTouchStart={(e) => {
             e.preventDefault();
             e.stopPropagation();
             window.open(whatsappUrl, "_blank");
-          }}
-        >
-          <span>Buy Now</span>
-          <span>₹{extraText}</span>
-        </a>
-      </div>
-    </div>
+                    }}
+                >
+                    <span>Buy Now</span>
+                    <span>₹{extraText}</span>
+                </a>
+            </div>
+        </div>
   );
 };
 
@@ -125,7 +125,7 @@ export default function TrendingVideoListTest() {
   const [velocity, setVelocity] = useState(0);
   const [lastX, setLastX] = useState(0);
   const [lastTime, setLastTime] = useState(0);
-  const API_URL =
+    const API_URL =
     "https://script.google.com/macros/s/AKfycbxx83M7s_lAMhpSlWEa1lTMY9dMyD9ASd1R1_FTP7nIy_P4iwLI0m3hJaKGG_Mt2YJ7MQ/exec";
 
   useEffect(() => {
@@ -134,15 +134,15 @@ export default function TrendingVideoListTest() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    fetch(API_URL)
-      .then((response) => {
-        if (!response.ok) {
+    useEffect(() => {
+        fetch(API_URL)
+            .then((response) => {
+                if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
-        }
+                }
         return response.json();
-      })
-      .then((data) => setVideos(data))
+            })
+            .then((data) => setVideos(data))
       .catch((error) => console.error("Fetch Error:", error.message));
   }, []);
 
@@ -191,7 +191,7 @@ export default function TrendingVideoListTest() {
     if (Math.abs(dragOffset) > threshold || Math.abs(velocity) > velocityThreshold) {
       if (dragOffset > 0 || velocity > 0) {
         handlePrev();
-      } else {
+            } else {
         handleNext();
       }
     }
@@ -257,8 +257,8 @@ export default function TrendingVideoListTest() {
     };
   };
 
-  return (
-    <div 
+    return (
+        <div
       className="relative w-full h-[80vh] md:h-[90vh] bg-transparent overflow-hidden"
       onMouseDown={handleDragStart}
       onMouseMove={handleDragMove}
@@ -269,19 +269,19 @@ export default function TrendingVideoListTest() {
       onTouchEnd={handleDragEnd}
     >
       {/* Hide desktop buttons on mobile */}
-      <button
-        onClick={handlePrev}
+            <button
+                onClick={handlePrev}
         className="absolute top-1/2 left-5 -translate-y-1/2 z-50 bg-gradient-to-r from-[#BC7BD0] via-[#AD55C8] to-[#82309C] text-white border-none rounded-full w-10 h-10 cursor-pointer hover:opacity-80 transition-opacity md:block hidden"
-      >
-        {"<"}
-      </button>
+            >
+                {"<"}
+            </button>
 
-      <button
-        onClick={handleNext}
+            <button
+                onClick={handleNext}
         className="absolute top-1/2 right-5 -translate-y-1/2 z-50 bg-gradient-to-r from-[#BC7BD0] via-[#AD55C8] to-[#82309C] text-white border-none rounded-full w-10 h-10 cursor-pointer hover:opacity-80 transition-opacity md:block hidden"
-      >
-        {">"}
-      </button>
+            >
+                {">"}
+            </button>
 
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="relative h-full flex justify-center items-center">
@@ -303,11 +303,11 @@ export default function TrendingVideoListTest() {
                 isActive={index === currentIndex}
                 onPrev={handlePrev}
                 onNext={handleNext}
-              />
+                        />
+                    </div>
+                ))}
             </div>
-          ))}
         </div>
-      </div>
     </div>
   );
-}
+} 

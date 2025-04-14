@@ -62,7 +62,7 @@ const Index = () => {
             <div className="text-center p-6 rounded-xl bg-mauve-50 dark:bg-mauve-900/20 transition-all duration-300 hover:shadow-lg">
               <div className="mx-auto mb-4 w-24 h-24">
                 <img 
-                  src="./images/customer-service.png" 
+                  src="/images/customer-service.png" 
                   alt="Customer Service" 
                   className="w-full h-full object-contain" 
                 />
@@ -76,7 +76,7 @@ const Index = () => {
             <div className="text-center p-6 rounded-xl bg-mauve-50 dark:bg-mauve-900/20 transition-all duration-300 hover:shadow-lg">
               <div className="mx-auto mb-4 w-24 h-24 flex justify-center items-center">
                 <img 
-                  src="./images/shipping.png" 
+                  src="/images/shipping.png" 
                   alt="Worldwide Shipping" 
                   className="w-full h-full object-contain"
                 />
@@ -90,7 +90,7 @@ const Index = () => {
             <div className="text-center p-6 rounded-xl bg-mauve-50 dark:bg-mauve-900/20 transition-all duration-300 hover:shadow-lg">
               <div className="mx-auto mb-4 w-24 h-24 flex justify-center items-center">
                 <img 
-                  src="./images/returns.png" 
+                  src="/images/returns.png" 
                   alt="Easy Returns" 
                   className="w-full h-full object-contain"
                 />

@@ -7,19 +7,9 @@ const Footer = () => {
       <div className="container max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 pl-20 pr-20">
           <div className="md:col-span-1">
-            <button 
-              onClick={() => {
-                window.scrollTo({
-                  top: 0,
-                  behavior: 'smooth'
-                });
-              }}
-              className="inline-block mb-4"
-            >
-              <div className="flex items-center mb-2">
-                <img src="./images/logo.png" alt="Mauve Logo" className="h-14 w-auto" />
-              </div>
-            </button>
+            <a href="/" className="inline-block mb-4">
+              <MauveLogo className="mb-2" />
+            </a>
             <p className="text-muted-foreground mb-4">
               Premium fashion boutique offering personalized styling experiences and curated collections.
             </p>
@@ -36,110 +26,22 @@ const Footer = () => {
           <div>
             <h3 className="font-medium text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li>
-                <button 
-                  onClick={() => {
-                    window.scrollTo({
-                      top: 0,
-                      behavior: 'smooth'
-                    });
-                  }}
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Home
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => {
-                    const element = document.getElementById('location');
-                    if (element) {
-                      const navbar = document.querySelector('nav');
-                      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
-                      const elementPosition = element.getBoundingClientRect().top;
-                      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
-                      window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                      });
-                    }
-                  }}
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Our Store
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => {
-                    const element = document.getElementById('about');
-                    if (element) {
-                      const navbar = document.querySelector('nav');
-                      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
-                      const elementPosition = element.getBoundingClientRect().top;
-                      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
-                      window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                      });
-                    }
-                  }}
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  About Us
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => {
-                    const element = document.getElementById('reviews');
-                    if (element) {
-                      const navbar = document.querySelector('nav');
-                      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
-                      const elementPosition = element.getBoundingClientRect().top;
-                      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
-                      window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                      });
-                    }
-                  }}
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Reviews
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => {
-                    const element = document.getElementById('appointment');
-                    if (element) {
-                      const navbar = document.querySelector('nav');
-                      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
-                      const elementPosition = element.getBoundingClientRect().top;
-                      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
-                      window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                      });
-                    }
-                  }}
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Book Appointment
-                </button>
-              </li>
+              <li><a href="/#home" className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
+              <li><a href="/#location" className="text-muted-foreground hover:text-primary transition-colors">Our Store</a></li>
+              <li><a href="/#about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+              <li><a href="/#reviews" className="text-muted-foreground hover:text-primary transition-colors">Reviews</a></li>
+              <li><a href="/#appointment" className="text-muted-foreground hover:text-primary transition-colors">Book Appointment</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-medium text-lg mb-4">Collections</h3>
             <ul className="space-y-2">
-              <li><a href="#collection/lehenga" className="text-muted-foreground hover:text-primary transition-colors">Lehnga</a></li>
-              <li><a href="#collection/gown" className="text-muted-foreground hover:text-primary transition-colors">Gown</a></li>
-              <li><a href="#collection/indo-western" className="text-muted-foreground hover:text-primary transition-colors">Indo Western</a></li>
-              <li><a href="#collection/bridal-lehenga" className="text-muted-foreground hover:text-primary transition-colors">Bridal Lehenga</a></li>
-              <li><a href="#collection" className="text-muted-foreground hover:text-primary transition-colors">All Collection</a></li>
+              <li><a href="/collection/lehenga" className="text-muted-foreground hover:text-primary transition-colors">Lehnga</a></li>
+              <li><a href="/collection/gown" className="text-muted-foreground hover:text-primary transition-colors">Gown</a></li>
+              <li><a href="/collection/indo-western" className="text-muted-foreground hover:text-primary transition-colors">Indo Western</a></li>
+              <li><a href="/collection/bridal-lehenga" className="text-muted-foreground hover:text-primary transition-colors">Bridal Lehenga</a></li>
+              <li><a href="/collection" className="text-muted-foreground hover:text-primary transition-colors">All Collection</a></li>
             </ul>
           </div>
         </div>
@@ -151,9 +53,9 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Mauve Story. All rights reserved.</p>
             </div>
             <div className="text-center md:text-right text-sm text-muted-foreground">
-              <a href="#/privacy" className="hover:text-primary transition-colors mr-4">Privacy Policy</a>
-              <a href="#/terms" className="hover:text-primary transition-colors mr-4">Terms of Service</a>
-              <a href="#/shipping" className="hover:text-primary transition-colors">Shipping Policy</a>
+              <a href="/privacy" className="hover:text-primary transition-colors mr-4">Privacy Policy</a>
+              <a href="/terms" className="hover:text-primary transition-colors mr-4">Terms of Service</a>
+              <a href="/shipping" className="hover:text-primary transition-colors">Shipping Policy</a>
             </div>
           </div>
         </div>
