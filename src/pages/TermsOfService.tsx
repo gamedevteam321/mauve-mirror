@@ -85,11 +85,6 @@ const TermsOfService = () => {
                   <p><strong>Email:</strong> [email protected]</p>
                   <p><strong>WhatsApp:</strong> +91 9810947849</p>
                 </div>
-
-                <p className="text-center mt-8">
-                  © 2025 Mauve Story. All Rights Reserved.<br />
-                  <em>Designed & Developed by Zen Webnet.</em>
-                </p>
               </div>
             </div>
           </section>
