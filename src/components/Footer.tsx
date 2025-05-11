@@ -40,7 +40,7 @@ const Footer = () => {
               <li><a href="/collection/lehenga" className="text-muted-foreground hover:text-primary transition-colors">Lehnga</a></li>
               <li><a href="/collection/gown" className="text-muted-foreground hover:text-primary transition-colors">Gown</a></li>
               <li><a href="/collection/indo-western" className="text-muted-foreground hover:text-primary transition-colors">Indo Western</a></li>
-              <li><a href="/collection/bridal-lehenga" className="text-muted-foreground hover:text-primary transition-colors">Bridal Lehenga</a></li>
+              {/* <li><a href="/collection/bridal-lehenga" className="text-muted-foreground hover:text-primary transition-colors">Bridal Lehenga</a></li> */}
               <li><a href="/collection" className="text-muted-foreground hover:text-primary transition-colors">All Collection</a></li>
             </ul>
           </div>

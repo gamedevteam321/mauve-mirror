@@ -10,10 +10,7 @@ const categories = [
   { title: 'SHARARA', slug: 'sharara' },
   { title: 'LEHNAGA', slug: 'lehenga' },
   { title: 'GOWN', slug: 'gown' },
-  { title: 'BRIDEMAID', slug: 'bridemaid' },
   { title: 'FISHCUT', slug: 'fishcut' },
-  { title: 'BRIDAL LEHNGA', slug: 'bridal-lehenga' },
-  { title: 'CO-CORDS', slug: 'co-cords' },
   { title: 'ANARKALI', slug: 'anarkali' },
   { title: 'BANARSI LEHNGA', slug: 'banarsi-lehenga' },
 ];

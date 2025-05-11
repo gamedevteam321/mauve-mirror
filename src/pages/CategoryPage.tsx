@@ -9,10 +9,7 @@ import {
   ShararaVideoList,
   LehengaVideoList,
   GownVideoList,
-  BridemaidVideoList,
   FishcutVideoList,
-  BridalLehengaVideoList,
-  CoCordVideoList,
   AnarkaliVideoList,
   BanarsiLehengaVideoList,
 } from "@/components/category-videos";
@@ -23,10 +20,7 @@ const categories = {
   'sharara': 'SHARARA',
   'lehenga': 'LEHNGA',
   'gown': 'GOWN',
-  'bridemaid': 'BRIDEMAID',
   'fishcut': 'FISHCUT',
-  'bridal-lehenga': 'BRIDAL LEHNGA',
-  'co-cords': 'CO-CORDS',
   'anarkali': 'ANARKALI',
   'banarsi-lehenga': 'BANARSI LEHNGA',
 } as const;
@@ -37,10 +31,7 @@ const categoryComponents = {
   'sharara': ShararaVideoList,
   'lehenga': LehengaVideoList,
   'gown': GownVideoList,
-  'bridemaid': BridemaidVideoList,
   'fishcut': FishcutVideoList,
-  'bridal-lehenga': BridalLehengaVideoList,
-  'co-cords': CoCordVideoList,
   'anarkali': AnarkaliVideoList,
   'banarsi-lehenga': BanarsiLehengaVideoList,
 } as const;
